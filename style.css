@@ -6,7 +6,7 @@ body{
 
 .container {
     
-    background-color: black;
+    background-color: transparent;
  
 }
 img{
@@ -32,14 +32,36 @@ html {
 
   .jumbotron{
     background-color:#FAE5CA;
-    align-content: center
-
+    align-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px ;
   }
+
   .lead{
       text-align: center;
 
   }
 
 .input-group {
-    
+    width : 40%;
+    margin: auto;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+    padding-top: 250px;
+    margin-bottom: 40 px;
+}
+
+.input-group-prepend {
+    float: right;
+}
+
+.card {
+    margin-bottom: 40 px;
 }
