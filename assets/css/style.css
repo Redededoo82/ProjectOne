@@ -21,9 +21,9 @@ img{
     text-align: center
 
 }
-/* html {
+html {
     scroll-behavior: smooth;
-  } */
+  }
 
   h1 {
     font-family: -webkit-body;
@@ -66,4 +66,4 @@ img{
     margin-bottom: 40 px;
 }
 
-/* #mapid { height: 180px; } */
+#mapid { height: 180px; }
