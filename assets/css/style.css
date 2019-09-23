@@ -64,4 +64,11 @@ html {
 
 .card {
     margin-bottom: 40 px;
+<<<<<<< HEAD
+=======
+}
+
+#map {
+    height: 500px;
+>>>>>>> master
 }

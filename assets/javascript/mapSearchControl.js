@@ -1,24 +1,11 @@
-/* 
- * Leaflet Control Search v2.9.7 - 2019-01-14 
- * 
- * Copyright 2019 Stefano Cudini 
- * stefano.cudini@gmail.com 
- * http://labs.easyblog.it/ 
- * 
- * Licensed under the MIT license. 
- * 
- * Demo: 
- * http://labs.easyblog.it/maps/leaflet-search/ 
- * 
- * Source: 
- * git@github.com:stefanocudini/leaflet-search.git 
- * 
- */
 /*
 	Name					Data passed			   Description
 
 	Managed Events:
-	 search:locationfound	{latlng, title, layer} fired after moved and show markerLocation
+	 search:locationfound
+	 
+	 https://api.yelp.com/v3/businesses/search?accessToken=bdZhbvY9LhTRAzcG1J4aOAoU8JZBVNmKymfTyFDj44DBUC4fUk5NHiRzkQ6Xcixiujgp0r4wREw8J4666qEw40K3PRQSPu3vQ2LU66okGVMJZ2nAAE-7yHW6du-EXXYx&term=food
+	 {latlng, title, layer} fired after moved and show markerLocation
 	 search:expanded		{}					   fired after control was expanded
 	 search:collapsed		{}					   fired after control was collapsed
  	 search:cancel			{}					   fired after cancel button clicked
@@ -1028,4 +1015,5 @@ L.control.search = function (options) {
 return L.Control.Search;
 
 });
+
 
