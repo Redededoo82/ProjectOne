@@ -35,6 +35,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .jumbotron {
@@ -62,6 +63,7 @@ body {
 .guide-title {
     font-size: 30px;
     margin-bottom: 20px;
+    
 }
 
 .search-bar {
