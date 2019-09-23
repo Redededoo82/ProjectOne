@@ -32,7 +32,7 @@ $("#search-button").on('click', function () {
     
 });
 
-var mymap = L.map('map').setView([51.505, -0.09], 13);
+var mymap = L.map('map').setView([30.2672, -97.7431], 13);
 console.log(mymap)
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
