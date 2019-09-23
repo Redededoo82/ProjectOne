@@ -17,57 +17,43 @@
 
     <title>Project One</title>
 </head>
-<div class="container">
-    <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
-            </div>
+<!-- <div class="container"> -->
+<div class="row1">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/a icon logo.jpg"
+                class="d-inline-block align-top nav-logo" alt="Austin Guide Logo">
+            Austin Guide
+        </a>
+    </nav>
+</div>
+<div class="row2">
+    <div class="search-box">
+        <div class="guide-title">Austin Guide - New to Austin?</div>
+        
+        <div class="input-search">
+                <input type="text" class="search-bar">
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-    </div>
-    <div class="jumbotron">
-        <h1 class="display-4">Austin Guide for Newbies</h1>
-        <p class="lead"> So you're new to Austin?</p>
-        <hr class="my-4">
-    </div>
-    <div class="card bg-dark text-white ">
-        <img src="assets/images/austin.jpg" class="card-img" style="height: 600px; background-size: auto;" alt="...">
-        <div class="card-img-overlay">
-            <div class="input-group flex-nowrap">
-                <div class="input-group-prepend">
-                    <button class="form-control" id="search-button">Search</button>
-                </div>
 
-                <input type="text" class="form-control" placeholder="Look for things to do"
-                    aria-label="Look for things to do" aria-describedby="addon-wrapping">
-            </div>
+        <button type="button" class="btn btn-primary">Search</button>
+
         </div>
     </div>
-    <div class="card bg-dark text-white ">
-
-        <img src="assets/images/down town austin.jpeg" class="card-img" style="height: 600px; background-size: auto;"
-            alt="...">
-        <div class="card-img-overlay">
+</div>
+<div class="row3">
+    <div class="col-6">
+        <div id="map">
         </div>
     </div>
-    <div class="card">
-    </div>
-    <div class="container">
-
-    </div>
+</div>
+<div class="col-6"></div>
+</div>
+<div class="row4"></div>
 
 </div>
 <div id="map"></div>
 
-
+<!-- </div> -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
     integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
