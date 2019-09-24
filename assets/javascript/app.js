@@ -13,7 +13,7 @@ $(document).ready(function () {
             userLong = parseFloat(long)
         })
     }
- })
+
 
  $("#search-button").on('click', function () {
   
@@ -32,11 +32,12 @@ $(document).ready(function () {
     });
  });
 
- var mymap = L.map('map').setView([51.505, -0.09],13);
+ var mymap = L.map('map').setView([userLat, userLong],13);
  console.log(mymap)
  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
      maxZoom: 18,
      id: 'mapbox.streets',
      accessToken: 'pk.eyJ1Ijoib2JqZWN0aXZlc2t1bmthbWJhc3NhZG9yIiwiYSI6ImNrMHNrZjg3czAzbWMzbXFzZWltZ2lkeTQifQ.bmyNVE-XAhU1uRbza64fMw'
- }).addTo(mymap);
+ }).addTo(mymap); 
+})
