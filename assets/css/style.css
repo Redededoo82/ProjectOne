@@ -35,8 +35,11 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    position: relative;
 
 }
+
 
 .jumbotron {
     background-color:#FAE5CA;
@@ -46,10 +49,7 @@ html {
 
 #map {
     height: 500px;
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 100%;
 }
 
 .search-box {
@@ -70,12 +70,18 @@ html {
 
 }
 
-.search-bar {
+#userInputField {
     border-radius: 5px;
     margin-bottom: 15px;
+    
 }
 
-#button {
-    color: #006BB6;
-    opacity: 1;
+.card {
+    height: 500px;
+    width: 100%;
+}
+
+#search-button {
+    background-color: #006BB6;
+    border-radius: 6px; 
 }
