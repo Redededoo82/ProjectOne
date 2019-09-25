@@ -35,8 +35,11 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    position: relative;
 
 }
+
 
 .jumbotron {
     background-color:#FAE5CA;
@@ -46,10 +49,7 @@ html {
 
 #map {
     height: 500px;
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 100%;
 }
 
 .search-box {
@@ -70,11 +70,18 @@ html {
 
 }
 
-.search-bar {
+#userInputField {
     border-radius: 5px;
     margin-bottom: 15px;
+    
 }
 
+.card {
+    height: 500px;
+    width: 100%;
+}
+
+<<<<<<< HEAD
 <<<<<<< HEAD
 #map {
 <<<<<<< HEAD
@@ -90,3 +97,9 @@ html {
     opacity: 1;
 }
 >>>>>>> 124589ce4a39fb9b40e58bfb728df42eef146d33
+=======
+#search-button {
+    background-color: #006BB6;
+    border-radius: 6px; 
+}
+>>>>>>> 315f08d7b1ac4e2ad09592f14c8fa384292d86a0
