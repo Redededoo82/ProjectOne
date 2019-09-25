@@ -59,7 +59,7 @@ $(document).ready(function () {
                     var long = data.businesses[i].coordinates.longitude;
                    var marker2 = L.marker([lat, long]).addTo(mymap)
 
-                        .bindPopup("<p>PLACE<p>");
+                        .bindPopup(data.businesses[i].coordinates);
 
                     marker2.on('mouseover', function (e) {
                         this.openPopup();
