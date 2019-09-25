@@ -11,6 +11,15 @@ html {
     width: 30px;
 }
 
+.navbar {
+    background-color: #292930;
+}
+
+.navbar-light .navbar-brand {
+    color: #ebebeb;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
 .row2 {
     background-image: url("../images/downtown-austin.jpeg");
     height: 100vh;
@@ -53,23 +62,21 @@ html {
 }
 
 .search-box {
-    /* height: 300px;
-    width: 800px;
-    margin-right: 20%;
-    margin-left: 10%; */
-    background-color: #ebebee;
+    height: 300px;
+    width: 500px;
+    background-color: rgba(235, 235, 238, .75);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0.75;
     border-radius: 12px; 
+    color:	#BF5700
 }
 
 .guide-title {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 20px;
-
+    font-family: 'Alfa Slab One', cursive;
 }
 
 #userInputField {
@@ -84,10 +91,13 @@ html {
 }
 
 #search-button {
-    background-color: #006BB6;
+    background-color: #BF5700;
     border-radius: 6px; 
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 18px;
 }
 
-       
-
- 
+footer {
+    background-color: #292930;
+    color: #ebebeb;
+}
