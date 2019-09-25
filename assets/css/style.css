@@ -17,8 +17,7 @@ html {
 
 .navbar-light .navbar-brand {
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 32px;
-    color: black;
+    font-size: 20px;
     -webkit-text-fill-color: #BF5700; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: #ebebeb;
@@ -53,12 +52,10 @@ html {
 
 }
 
-
 .jumbotron {
     background-color:#FAE5CA;
     align-content: center;
 }
-
 
 #map {
     height: 500px;
