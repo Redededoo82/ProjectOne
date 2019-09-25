@@ -17,35 +17,49 @@
 
     <title>Project One</title>
 </head>
-<!-- <div class="container"> -->
-<div class="row1">
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/a icon logo.jpg" class="d-inline-block align-top nav-logo" alt="Austin Guide Logo">
-            Austin Guide
-        </a>
-    </nav>
-</div>
-<div class="row2">
-    <div class="search-box">
-        <div class="guide-title">Austin Guide - New to Austin?</div>
 
-        <div class="input-search">
-            <input type="text" id="userInputField">
-        </div>
-
-        <button type="button" id="search-button">Search</button>
-
-    </div>
-</div>
-</div>
-<div class="row3 d-flex justify-content-around">
-    <div class="col-lg-6 col-sm-10">
-        <div id="map">
+<body>
+    <!-- <div class="container"> -->
+    <div class="row row1">
+        <div class="container">
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/a icon logo.jpg" class="d-inline-block align-top nav-logo"
+                        alt="Austin Guide Logo">
+                    Austin Guide
+                </a>
+            </nav>
         </div>
     </div>
-    <div class="col-lg-6 col-sm-10">
-        <div class="card">
+    <div class="row2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1">
+                    <!-- intentionally left blank -->
+                </div>
+                <div class="col-sm-10 search-box">
+                    <div class="guide-title">Austin Guide - New to Austin?</div>
+
+                    <div class="input-search">
+                        <input type="text" id="userInputField">
+                    </div>
+
+                    <button type="button" id="search-button">Search</button>
+
+                </div>
+                <div class="col-sm-1">
+                    <!-- intentionally left blank -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row3 d-flex justify-content-around">
+        <div class="col-lg-6 col-sm-12">
+            <div id="map">
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <div class="card"></div>
             <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card body">
                 <h5 class="card-title">Results</h5>
@@ -53,21 +67,15 @@
             </div>
         </div>
     </div>
-</div>
+    <!-- </div> -->
+    <div class="row4"></div>
 
-</div>
-</div>
-<div class="row4"></div>
-
-</div>
-
-<!-- </div> -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-    crossorigin=""></script>
-<script src="assets/javascript/app.js"></script>
-<!-- <script src="./assets/javascript/mapSearchControl.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <script src="assets/javascript/app.js"></script>
+    <!-- <script src="./assets/javascript/mapSearchControl.js"></script> -->
 </body>
 
 </html>
