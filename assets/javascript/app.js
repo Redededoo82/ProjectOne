@@ -74,6 +74,8 @@ $(document).ready(function () {
                     //     this.closePopup();
                     // });
                 }
+
+                
                 console.log("search = ", search);
 
                 for (var p = 0; p < search.length; p++) {
