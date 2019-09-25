@@ -1,5 +1,3 @@
-
-
 var userLat;
 var userLong;
 var output = "";
@@ -32,8 +30,6 @@ $(document).ready(function () {
                 id: 'mapbox.streets',
                 accessToken: 'pk.eyJ1Ijoib2JqZWN0aXZlc2t1bmthbWJhc3NhZG9yIiwiYSI6ImNrMHNrZjg3czAzbWMzbXFzZWltZ2lkeTQifQ.bmyNVE-XAhU1uRbza64fMw'
             }).addTo(mymap);
-
-
         })
     }
 
@@ -51,7 +47,6 @@ $(document).ready(function () {
             }, method: 'GET', dataType: 'json', success: function (data) {
                 console.log(data);
 
-
                 var search = [];
                 for (var i = 0; i < data.businesses.length; i++) {
                     search[i] = {};
@@ -61,10 +56,10 @@ $(document).ready(function () {
                     output = search[i];
 
                     if (incoming.name) { output.name = incoming.name; }
-                    if (incoming.coordinates) {
-                        if (incoming.coordinates.longitude) { output.longitude = incoming.coordinates.longitude; }
-                        if (incoming.coordinates.latitude) { output.latitude = incoming.coordinates.latitude; }
-                    }
+                    if (incoming.phone) { output.phone = incoming.phone; }
+                    if (incoming.rating) { output.rating = incoming.rating; }
+                    if (incoming.image_url) { output.image_url = incoming.image_url; }
+                   
 
                     console.log(data.businesses[i].coordinates)
                     var lat = data.businesses[i].coordinates.latitude;
@@ -81,15 +76,12 @@ $(document).ready(function () {
                 }
                 console.log("search = ", search);
 
-
-
                 for (var p = 0; p < search.length; p++) {
-                    document.getElementById('plswork').innerHTML += "Name:" + search[p].name + " Lat:" + search[p].latitude + "  Long: " + search[p].longitude + "<br>";
+                    document.getElementById('plswork').innerHTML += "Name: " + search[p].name + " Number: " + search[p].phone + " rating: " + search[p].rating + "<br>";
+                    $("#element").attr("src", data.businesses[p].image_url);
                 }
             }
         });
-
-
     });
 
     var mymap = L.map('map').setView([userLat, userLong], 13);
@@ -100,5 +92,4 @@ $(document).ready(function () {
         id: 'mapbox.streets',
         accessToken: 'pk.eyJ1Ijoib2JqZWN0aXZlc2t1bmthbWJhc3NhZG9yIiwiYSI6ImNrMHNrZjg3czAzbWMzbXFzZWltZ2lkeTQifQ.bmyNVE-XAhU1uRbza64fMw'
     }).addTo(mymap);
-
 });
