@@ -39,7 +39,7 @@ $(document).ready(function () {
         // console.log(userSearchTerm);
 
         var corsAnywhere = "https://cors-anywhere.herokuapp.com/";
-        var queryURL = corsAnywhere + `https://api.yelp.com/v3/businesses/search?latitude=${userLat}&longitude=${userLong}&categories=resturants&term=${userSearchTerm}&limit=5`
+        var queryURL = corsAnywhere + `https://api.yelp.com/v3/businesses/search?latitude=${userLat}&longitude=${userLong}&categories=resturants&term=${userSearchTerm}&limit=10`
 
         $.ajax({
             url: queryURL, headers: {
@@ -74,15 +74,13 @@ $(document).ready(function () {
                     //     this.closePopup();
                     // });
                 }
-
-                
                 console.log("search = ", search);
 
                 for (var p = 0; p < search.length; p++) {
-                    document.getElementById('plswork').innerHTML+= `<tr><th></th><td>${search[p].name}</td>  <th></th><td>${search[p].phone}</td> <th></th><td>${search[p].rating}</td></tr>`
-
-                } 
-            } 
+                    document.getElementById('plswork').innerHTML+= `<tr><th></th><td>${search[p].name}</td>  <th></th><td>${search[p].phone}</td> <th></th><td>${search[p].rating}</td></tr>` 
+                    // $("#element").attr("src", data.businesses[p].image_url);
+                }
+            }
         });
     });
 
@@ -95,7 +93,3 @@ $(document).ready(function () {
         accessToken: 'pk.eyJ1Ijoib2JqZWN0aXZlc2t1bmthbWJhc3NhZG9yIiwiYSI6ImNrMHNrZjg3czAzbWMzbXFzZWltZ2lkeTQifQ.bmyNVE-XAhU1uRbza64fMw'
     }).addTo(mymap);
 });
-
-// document.getElementById('plswork').innerHTML +=  "Name: " + search[p].name + " Number: " + search[p].phone + " rating: " + search[p].rating + "<br>" ;
-                    // jQuery for image
-                    // $("#element").attr("src", data.businesses[p].image_url);

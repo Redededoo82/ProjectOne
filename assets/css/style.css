@@ -1,29 +1,24 @@
 html {
     scroll-behavior: smooth;
-}
-
-/* body {
+ }
+ /* body {
     font-size: 80px;
-} */
-
-.nav-logo {
+ } */
+ .nav-logo {
     height: 30px;
     width: 30px;
-}
-
-.navbar {
+ }
+ .navbar {
     background-color: #292930;
-}
-
-.navbar-light .navbar-brand {
+ }
+ .navbar-light .navbar-brand {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 20px;
     -webkit-text-fill-color: #BF5700; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: #ebebeb;
-}
-
-.row2 {
+ }
+ .row2 {
     background-image: url("../images/downtown-austin.jpeg");
     height: 100vh;
     /* width: 100%; */
@@ -34,9 +29,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.row3 {
+ }
+ .row3 {
     background-image: url("../images/Hamiltons-Pool-in-Texas.jpg");
     height: 100vh;
     /* width: 100%; */
@@ -49,20 +43,16 @@ html {
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-
-}
-
-.jumbotron {
+ }
+ .jumbotron {
     background-color:#FAE5CA;
     align-content: center;
-}
-
-#map {
+ }
+ #map {
     height: 500px;
     width: 100%;
-}
-
-.search-box {
+ }
+ .search-box {
     height: 300px;
     width: 500px;
     background-color: rgba(235, 235, 238, .75);
@@ -70,46 +60,36 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 12px; 
-    color:	#BF5700
-}
-
-.guide-title {
+    border-radius: 12px;
+    color:    #BF5700
+ }
+ .guide-title {
     font-size: 24px;
     margin-bottom: 20px;
     font-family: 'Alfa Slab One', cursive;
-}
-
-#userInputField {
+ }
+ #userInputField {
     border-radius: 5px;
-    margin-bottom: 15px; 
-}
-
-.table{
-color: white
-}
-
-.card {
+    margin-bottom: 15px;
+ }
+ .card {
     height: 500px;
     width: 100%;
     overflow: auto;
     background-color: rgba(191, 86, 0, 0.432);
     color: white;
-}
-
-.card-title {
+ }
+ .card-title {
     font-family: 'Big Shoulders Display', cursive;
     text-align: center;
-}
-
-#search-button {
+ }
+ #search-button {
     background-color: #BF5700;
-    border-radius: 6px; 
+    border-radius: 6px;
     font-family: 'Big Shoulders Display', cursive;
     font-size: 24px;
-}
-
-footer {
+ }
+ footer {
     background-color: #292930;
     color: #ebebeb;
-}
+ }
