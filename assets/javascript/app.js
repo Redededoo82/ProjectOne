@@ -74,11 +74,16 @@ $(document).ready(function () {
                     //     this.closePopup();
                     // });
                 }
+
+                
                 console.log("search = ", search);
 
                 for (var p = 0; p < search.length; p++) {
+
                     document.getElementById('plswork').innerHTML+= `<tr><th></th><td>${search[p].name}</td>  <th></th><td>${search[p].phone}</td> <th></th><td>${search[p].rating}</td></tr>` 
                     // $("#element").attr("src", data.businesses[p].image_url);
+
+
                 }
             }
         });
@@ -93,3 +98,4 @@ $(document).ready(function () {
         accessToken: 'pk.eyJ1Ijoib2JqZWN0aXZlc2t1bmthbWJhc3NhZG9yIiwiYSI6ImNrMHNrZjg3czAzbWMzbXFzZWltZ2lkeTQifQ.bmyNVE-XAhU1uRbza64fMw'
     }).addTo(mymap);
 });
+
