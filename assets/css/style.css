@@ -48,6 +48,10 @@ html {
     background-color:#FAE5CA;
     align-content: center;
  }
+
+ .table {
+     color: white;
+ }
  #map {
     height: 500px;
     width: 100%;
