@@ -39,7 +39,7 @@ $(document).ready(function () {
         // console.log(userSearchTerm);
 
         var corsAnywhere = "https://cors-anywhere.herokuapp.com/";
-        var queryURL = corsAnywhere + `https://api.yelp.com/v3/businesses/search?latitude=${userLat}&longitude=${userLong}&categories=resturants&term=${userSearchTerm}&limit=10`
+        var queryURL = corsAnywhere + `https://api.yelp.com/v3/businesses/search?latitude=${userLat}&longitude=${userLong}&categories=resturants&term=${userSearchTerm}&limit=5`
 
         $.ajax({
             url: queryURL, headers: {
@@ -79,10 +79,10 @@ $(document).ready(function () {
                 console.log("search = ", search);
 
                 for (var p = 0; p < search.length; p++) {
-                    document.getElementById('plswork').innerHTML +=  "Name: " + search[p].name + " Number: " + search[p].phone + " rating: " + search[p].rating + "<br>" ;
-                    $("#element").attr("src", data.businesses[p].image_url);
-                }
-            }
+                    document.getElementById('plswork').innerHTML+= `<tr><th></th><td>${search[p].name}</td>  <th></th><td>${search[p].phone}</td> <th></th><td>${search[p].rating}</td></tr>`
+
+                } 
+            } 
         });
     });
 
@@ -96,3 +96,6 @@ $(document).ready(function () {
     }).addTo(mymap);
 });
 
+// document.getElementById('plswork').innerHTML +=  "Name: " + search[p].name + " Number: " + search[p].phone + " rating: " + search[p].rating + "<br>" ;
+                    // jQuery for image
+                    // $("#element").attr("src", data.businesses[p].image_url);
