@@ -82,20 +82,27 @@ html {
 
 #userInputField {
     border-radius: 5px;
-    margin-bottom: 15px;
-    
+    margin-bottom: 15px; 
 }
 
 .card {
     height: 500px;
     width: 100%;
+    overflow: auto;
+    background-color: rgba(191, 86, 0, 0.432);
+    color: white;
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', cursive;
+    text-align: center;
 }
 
 #search-button {
     background-color: #BF5700;
     border-radius: 6px; 
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 footer {

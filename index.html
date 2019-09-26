@@ -14,68 +14,90 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="" />
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Big+Shoulders+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Big+Shoulders+Display&display=swap"
+        rel="stylesheet">
 
     <title>Project One</title>
 </head>
+
 <body>
-<!-- <div class="container"> -->
+    <!-- <div class="container"> -->
 
-<div class="row1">
-    <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/hook em.png" class="d-inline-block align-top nav-logo" alt="Austin Guide Logo">
-            Austin Guide
-        </a>
-    </nav>
-</div>
-<div class="row2">
-    <div class="search-box">
-        <div class="guide-title">Austin Guide - New to Austin?</div>
-
-        <div class="input-search">
-            <input type="text" id="userInputField">
-        </div>
-
-        <button type="button" id="search-button">Search</button>
-
+    <div class="row1">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/hook em.png" class="d-inline-block align-top nav-logo" alt="Austin Guide Logo">
+                Austin Guide
+            </a>
+        </nav>
     </div>
-</div>
-</div>
-<div class="row3 d-flex justify-content-around">
-    <div class="col-lg-6 col-sm-10">
-        <div id="map">
+    <div class="row2">
+        <div class="search-box">
+            <div class="guide-title">Austin Guide - New to Austin?</div>
+
+            <div class="input-search">
+                <input type="text" id="userInputField">
+            </div>
+
+            <button type="button" id="search-button">Search</button>
+
         </div>
     </div>
-    <div class="col-lg-6 col-sm-10">
-        <div class="card">
-            <img id="element" class="card-img-top" src="" alt="Card image cap">
-            <div class="card body">
-                <h5 class="card-title">Results</h5>
-                <p class="card-text" id="plswork">  </p>
-
-                <p class="card-text">Info</p>
-                <p class="card-text" id="plswork">Info</p>
-
+    </div>
+    <div class="row3 d-flex justify-content-around">
+        <div class="col-lg-6 col-sm-10">
+            <div id="map">
             </div>
         </div>
-    </div>
-</div>
+        <div class="col-lg-6 col-sm-10">
+            <div class="card">
+                <table class="table">
+                    <h5 class="card-title">Results</h5>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th scope="col">Name
+                            <th></th>
 
-</div>
-</div>
-<div class="row4"></div>
-<footer>
-    <div class="footer-copyright text-center py-3">
-        © 2019 Copyright: Austin Guide Inc.
+                            <th scope="col">Phone Number
+                            <th></th>
+
+                            <th scope="col">Rating
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="plswork">
+                        <!-- <tr>
+                                        <th scope="row">1</th>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                      </tr> -->
+                    </tbody>
+                </table>
+                <div class="card body">
+                    <p class="card-text" id="plswork"> </p>
+                </div>
+            </div>
+        </div>
+
     </div>
-</footer>
-</div>
-<!-- </div> -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-    crossorigin=""></script>
-<script src="assets/javascript/app.js"></script>
+    <div class="row4"></div>
+    <footer>
+        <div class="footer-copyright text-center py-3">
+            © 2019 Copyright: Austin Guide Inc.
+        </div>
+    </footer>
+    </div>
+    <!-- </div> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
