@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/css?family=Anton|EB+Garamond&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin="" />
-
-    <title>Project One</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Anton%7CEB+Garamond&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+       integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+       crossorigin="" />
+   <title>Project One</title>
 </head>
 <!-- <div class="container"> -->
 <div class="row1">
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/a icon logo.jpg" class="d-inline-block align-top nav-logo" alt="Austin Guide Logo">
-            Austin Guide
-        </a>
-    </nav>
+   <nav class="navbar navbar-light bg-light">
+       <a class="navbar-brand" href="#">
+           <img src="assets/images/a icon logo.jpg" class="d-inline-block align-top nav-logo" alt="Austin Guide Logo">
+           Austin Guide
+       </a>
+   </nav>
 </div>
 <div class="row2">
-    <div class="search-box">
-        <div class="guide-title">Austin Guide - New to Austin?</div>
-
-        <div class="input-search">
-            <input type="text" id="userInputField">
-        </div>
-
-        <button type="button" id="search-button">Search</button>
-
-    </div>
+   <div class="search-box">
+       <div class="guide-title">Austin Guide - New to Austin?</div>
+       <div class="input-search">
+           <input type="text" id="userInputField">
+       </div>
+       <button type="button" id="search-button">Search</button>
+   </div>
 </div>
 </div>
+<a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
 <div class="row3 d-flex justify-content-around">
-    <div class="col-lg-6 col-sm-10">
-        <div id="map">
-        </div>
-    </div>
-    <div class="col-lg-6 col-sm-10">
-        <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card body">
+   <div class="col-lg-6 col-sm-10">
+       <div id="map">
+       </div>
+   </div>
+   
+
+   
+   <div class="col-lg-6 col-sm-10">
+       <div class="card">
+            <table class="table">
                 <h5 class="card-title">Results</h5>
-                <p class="card-text" id="plswork">  </p>
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Name
+                        </th>
+                        <th scope="col">rating</th>
+                      </tr>
+                    </thead>
+                    <tbody id="plswork">
+                      <!-- <tr>
+                        <th scope="row">1</th>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        
+                      </tr> -->
+                    </tbody>
+                  </table>
+           
+           <img class="card-img-top" id="placeholder" src="" alt="Card image cap">
+           <div class="card body">
+               
+               <p class="card-text">  </p>
+               <p class="card-text">Info</p>
+           </div>
+       </div>
+       <div id="placeholder"></div>
 
-            </div>
-        </div>
-    </div>
+
+       
+   </div>
 </div>
-
 </div>
 </div>
 <div class="row4"></div>
-
 </div>
-
 <!-- </div> -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-    crossorigin=""></script>
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
 <script src="assets/javascript/app.js"></script>
 </body>
 </html>
