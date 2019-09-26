@@ -1,105 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/css?family=Anton|EB+Garamond&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin="" />
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Big+Shoulders+Display&display=swap"
-        rel="stylesheet">
-
-    <title>Project One</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Anton%7CEB+Garamond&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+       integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+       crossorigin="" />
+   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One%7CBig+Shoulders+Display&display=swap"
+       rel="stylesheet">
+   <title>Project One</title>
 </head>
-
 <body>
+   <!-- <div class="container"> -->
+   <div class="row1">
+       <nav class="navbar navbar-light">
+           <a class="navbar-brand" href="#">
+               <img src="assets/images/hook em.png" class="d-inline-block align-top nav-logo" alt="Austin Guide Logo">
+               Austin Guide
+           </a>
+       </nav>
+   </div>
+   <div class="row2">
+       <div class="search-box">
+           <div class="guide-title">Austin Guide - New to Austin?</div>
+           <div class="input-search">
+               <input type="text" id="userInputField">
+           </div>
+           <button type="button" id="search-button">Search</button>
+       </div>
+   </div>
+   </div>
+   <div class="row3 d-flex justify-content-around">
+       <div class="col-lg-6 col-sm-10">
+           <div id="map">
+           </div>
+       </div>
+       <div class="col-lg-6 col-sm-10">
+           <div class="card">
+               <table class="table">
+                   <h1 class="card-title">Results</h1>
+                   <thead>
+                       <tr>
+                           <th></th>
+                           <th scope="col">Name
+                           <th></th>
+                           <th scope="col">Phone Number
+                           <th></th>
+                           <th scope="col">Rating
+                           </th>
+                       </tr>
+                   </thead>
+                   <tbody id="plswork">
+                       <!-- <tr>
+                                       <th scope="row">1</th>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row">2</th>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row">3</th>
+                                     </tr> -->
+                   </tbody>
+               </table>
+               <div class="card body">
+                   <p class="card-text" id="plswork"> </p>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="row4"></div>
+   <footer>
+       <div class="footer-copyright text-center py-3">
+           © 2019 Copyright: Austin Guide Inc.
+       </div>
+   </footer>
+   </div>
+   <!-- </div> -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-    <!-- <div class="container"> -->
-
-
-    <div class="row1">
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/hook em.png" class="d-inline-block align-top nav-logo" alt="Austin Guide Logo">
-                Austin Guide
-            </a>
-        </nav>
-    </div>
-    <div class="row2">
-        <div class="search-box">
-            <div class="guide-title">Austin Guide - New to Austin?</div>
-
-            <div class="input-search">
-                <input type="text" id="userInputField">
-            </div>
-
-
-            <button type="button" id="search-button">Search</button>
-        </div>
-    </div>
-    </div>
-    <div class="row3 d-flex justify-content-around">
-        <div class="col-lg-6 col-sm-10">
-            <div id="map">
-            </div>
-        </div>
-        <div class="col-lg-6 col-sm-10">
-            <div class="card">
-                <table class="table">
-                    <h5 class="card-title">Results</h5>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th scope="col">Name
-                            <th></th>
-
-                            <th scope="col">Phone Number
-                            <th></th>
-
-                            <th scope="col">Rating
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody id="plswork">
-                        <!-- <tr>
-                                        <th scope="row">1</th>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                      </tr> -->
-                    </tbody>
-                </table>
-                <div class="card body">
-                    <p class="card-text" id="plswork"> </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="row4"></div>
-    <footer>
-        <div class="footer-copyright text-center py-3">
-            © 2019 Copyright: Austin Guide Inc.
-        </div>
-    </footer>
-    </div>
-    <!-- </div> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-        crossorigin=""></script>
-    <script src="assets/javascript/app.js"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+       integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+       crossorigin=""></script>
+   <script src="assets/javascript/app.js"></script>
 </body>
-
 </html>
