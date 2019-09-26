@@ -29,7 +29,7 @@ html {
     /* width: 100%; */
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: cover;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@ html {
     /* width: 100%; */
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: cover;
     overflow: hidden;
     display: flex;
     justify-content: space-around;
